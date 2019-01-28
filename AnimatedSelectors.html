@@ -27,9 +27,7 @@
 </head>
 <body>
     
-    <button id='run'>Run</button>
-    <button id='toggleRed'>ToggleRed</button>
-
+    
     <div></div>
     <div id = 'mover'>
         
@@ -37,8 +35,17 @@
     <div id='Toggle'></div>
     
     <div></div>
+    <button id='run'>Toogle Run for animated  div</button>
+    <button id='toggleRed'>ToggleRed</button>
 
     <script>
+        $('div').click(function(e){
+            const div = e.target
+            $(div).attr('onclick', 'move()')
+        })
+        function move(){
+            console.log('I am in move')
+        }
         $('#run').click(function(){
             $('div:animated').toggleClass('colored')
         })
@@ -52,7 +59,7 @@
             $('#Toggle').toggleClass('red')
         })
         //iWillRepeat()
-        animateIt()
+        //animateIt()
     </script>
 </body>
 </html>
