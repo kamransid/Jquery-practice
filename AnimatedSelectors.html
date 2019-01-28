@@ -17,6 +17,9 @@
         div.colored{
             background: green
         }
+        div.red{
+            background: red
+        }
     </style>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -25,10 +28,14 @@
 <body>
     
     <button id='run'>Run</button>
+    <button id='toggleRed'>ToggleRed</button>
 
     <div></div>
-    <div id = 'mover'></div>
-
+    <div id = 'mover'>
+        
+    </div>
+    <div id='Toggle'></div>
+    
     <div></div>
 
     <script>
@@ -38,6 +45,13 @@
         function animateIt(){
             $('#mover').slideToggle('slow', animateIt)
         }
+        // function iWillRepeat(){
+        //     $('#Toggle').toggleClass('red')
+        // }
+        $('#toggleRed').click(function(){
+            $('#Toggle').toggleClass('red')
+        })
+        //iWillRepeat()
         animateIt()
     </script>
 </body>
