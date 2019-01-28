@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div, span{
+            width: 120px;
+            height: 40px;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            background: #eeeeee
+        }
+    </style>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="notMe">div class="notMe"</div>
+    <div class="myClass">div class='myClass'</div>
+    <span class="myClass">span class='myClass'</span>
+    <div class="myClass otherClass">I have two clasess</div>
+
+    <script>
+        $('.myClass').css('border', '3px solid yellow')
+        $('.myClass.otherClass').css('border', '5px solid red')
+    </script>
+</body>
+</html>
