@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div{
+            margin: 5px;
+            border: 3px solid red;
+            width: 140px;
+            padding: 5px;
+            text-align: center;
+            background: #eeeeee;
+        }
+    </style>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>John Resig</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohh</div>
+    <script>
+        $("div:contains('John')").css('text-decoration', 'underline')
+    </script>
+</body>
+</html>
