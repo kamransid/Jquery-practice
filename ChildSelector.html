@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul class="topnav">
+        <li>Item 1</li>
+        <li>Item 2
+            <ul class="innerdiv">
+                <li>Nested Item one</li>
+                <li>Nested Item two</li>
+                <li>Nested Item three</li>
+            </ul>
+        </li>
+        <li>Item three</li>
+    </ul>
+    <script>
+        $('ul.topnav>li').css('border', '3px double red')
+        $('.innerdiv').css('border', '3px solid red')
+        $('ul.innerdiv>li').css('border', '4px solid green')
+    </script>
+</body>
+</html>
