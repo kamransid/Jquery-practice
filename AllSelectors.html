@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        h3{
+            margin: 0;
+        }
+
+        div,span,p{
+            width: 80px;
+            height: 40px;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            background-color: #eeeeee
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div>DIV</div>
+    <!-- <h3>Hello H3</h3> -->
+    <span>Span</span>
+    <p><button>Button</button></p>
+    
+    <script>
+      var elemCount = $('*').css('border', '3px solid red').length
+      $('body').prepend(`
+        <h3>${elemCount} Elements found</h3>
+      `)  
+      if($('body').find('*')){
+          console.log('We found something')
+          console.log($('body').find('*').length)
+      } 
+    </script>
+</body>
+</html>
