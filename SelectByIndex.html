@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <style>
+      .foo{
+        color: green;
+        background-color: red;
+      }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                TD #0
+            </td>
+            <td>
+                TD #1
+            </td>
+            <td>
+                TD #2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                TD #3
+            </td>
+            <td>
+                TD #4
+            </td>
+            <td>
+                TD #5
+            </td>
+        </tr>
+        <tr>
+            <td>
+                TD #6
+            </td>
+            <td>
+                TD #7
+            </td>
+            <td>
+                TD #8
+            </td>
+        </tr>
+    </table>
+    <ul class="nav">
+        <li>List 1, Item 1</li>
+        <li>List 1, Item 2</li>
+        <li>List 1, Item 3</li>
+    </ul>
+    <ul class='nav'>
+        <li>List 2, Item 1</li>
+        <li>List 2, Item 2</li>
+        <li>List 2, Item 3</li>
+    </ul>
+    <script>
+        //$('td').eq(2).css('color', 'red')
+        // $('td:eq(1)').css('border', '3px solid red')
+        // $('ul.nav:eq(1) li:eq(1)').css('backgroundColor', '#ff0')
+        // console.dir($('ul.nav'))
+        // $('ul.nav').each(function(index){
+        //     $(this).find('li:eq(1)').css('fontStyle', 'italic')
+        // })
+        // $('ul.nav li:nth-child(2)').css('color', 'red')
+        // Negative will not work in nth-child
+        // $('ul.nav li:nth-child(-1)').addClass('foo')
+        $('li:eq(-2)').addClass('foo')
+    </script>
+</body>
+
+</html>
