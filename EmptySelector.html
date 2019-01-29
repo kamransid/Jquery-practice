@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,44 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <p>Hajaro Bhai</p>
+    <p></p>
+    <table border="1">
+        <tr>
+            <td>
+                TD #0
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                TD #1
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            
+            <td>
+                TD #5
+            </td>
+        </tr>
+    </table>
+
     <script>
-         $(':empty').text('Was Empty').css('background', 'rgb(255,220,200)')
-         .css('width', '160px')
+        // $(':empty').text('Was Empty').css('background', 'rgb(255,220,200)')
+        //     .css('width', '160px')
+        console.log('Hi')
+        $('td:empty').text('I am Empty')
+        .css('background-color', 'yellow')
     </script>
 </body>
+
 </html>
